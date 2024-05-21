@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello-world';
+
+  onFavoriteChange(event: { newValue: boolean }) {
+    console.log('Favorite changed:', event.newValue);
+    // Additional logic here
+  }
 }
