@@ -16,7 +16,10 @@ import { CoursesService } from "./courses.service";
       Save
      </button>
      <input [(ngModel)]="email" (keyup.enter)="onKeyUpTwoWay()" />
-     {{ text | summary:10 }}
+     <br>
+     {{ text | summary }}
+     <br>
+     <hr>
      `
 })
 export class CoursesComponent {
@@ -41,11 +44,11 @@ export class CoursesComponent {
     // <input #emailTest (keyup.enter)="onKeyUp(emailTest.value)" />
 
     // the email passed is a template variable
-    console.log(this.emailTest)
   }
 
   // Two way binding
   onKeyUpTwoWay(){
+    alert(`You have written: ${this.email}`)
     console.log(this.email)
   }
 

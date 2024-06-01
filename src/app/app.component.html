@@ -1,7 +1,30 @@
 <h1> Angular </h1>
 <app-courses></app-courses>
+<app-course-list></app-course-list>
+<!-- <h2> Adding ngIf with ng-template for courses length</h2>
+<div *ngIf="courses.length==0; else noCourses">
+  <span> list of courses is: {{courses}} </span>
+<div>
+<ng-template #noCourses>
+  no courses
+</ng-template> -->
 <br>
 <hr>
 <h2> Now Below is Basics of Sub components and their API</h2>
 <br>
 <favourite [isFavourite]=true (change)="onFavoriteChange($event)"></favourite>
+<hr>
+<h2> Now Below is Panel Component of Bootstrap</h2>
+<br>
+<bootstrap-panel title="Panel Title">
+  <div class="panel-content">
+    This is the content of the panel.
+  </div>
+</bootstrap-panel>
+<br>
+<hr>
+<input type="text" appInputFormat/>
+<br>
+<hr>
+<app-contact-form></app-contact-form>
+

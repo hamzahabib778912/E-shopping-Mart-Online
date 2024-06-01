@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hello-world';
+  title = 'My test Angular APP';
+  courses = ['A', 'B', 'C']
 
   onFavoriteChange(event: { newValue: boolean }) {
     console.log('Favorite changed:', event.newValue);
