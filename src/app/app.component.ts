@@ -7,7 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My test Angular APP';
-  courses = ['A', 'B', 'C']
+  courses = ['A', 'B', 'C'];
+
+  tweet = {
+    body: '...',
+    likesCount: 10,
+    isLiked: true
+  }
 
   onFavoriteChange(event: { newValue: boolean }) {
     console.log('Favorite changed:', event.newValue);
