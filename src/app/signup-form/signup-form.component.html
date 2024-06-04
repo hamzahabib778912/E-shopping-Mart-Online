@@ -9,7 +9,7 @@
             formControlName="username"
             id="username"
             type="text"
-            class="form-control">
+            class="form-control w-50">
             <div *ngIf="username?.pending"> In Progress</div>
           <div *ngIf="username?.invalid && username?.touched" class="alert alert-danger">
             <div *ngIf="username?.errors?.['required']">Username is required</div>
@@ -22,7 +22,7 @@
         formControlName="password"
             id="password"
             type="text"
-            class="form-control">
+            class="form-control w-50">
     </div>
 </div>
   <br>
