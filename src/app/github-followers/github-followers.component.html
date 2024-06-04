@@ -6,7 +6,7 @@
   </div>
   <div>
     <h5 class="fw-bold mb-1">
-      <a [routerLink]="['/followers', follower.id]" class="text-decoration-none">{{ follower.login }}</a>
+      <a [routerLink]="['/followers', follower.id, follower.login]" class="text-decoration-none">{{ follower.login }}</a>
     </h5>
     <a [href]="follower.html_url" target="_blank">{{ follower.html_url }}</a>
   </div>
